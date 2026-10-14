@@ -8,7 +8,7 @@
 
 **Claude Code that leaves your `.env` and migrations alone.** In the test, neither protected file was changed (the hook stopped the migration edit; Claude declined the `.env` one), and all 11 setup checks pass (`check.py`).
 
-**[Hire this on Fiverr →](https://www.fiverr.com/nercari/PLACEHOLDER-claude-code-setup)** · **[See live demo](https://nercari.github.io/claude-code-setup-example/)**
+**Fiverr gigs coming soon** · **[See live demo](https://nercari.github.io/claude-code-setup-example/)**
 
 ## What you get
 
