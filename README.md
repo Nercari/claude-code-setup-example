@@ -4,7 +4,6 @@
 
 [![checks](https://github.com/Nercari/claude-code-setup-example/actions/workflows/checks.yml/badge.svg)](https://github.com/Nercari/claude-code-setup-example/actions/workflows/checks.yml)
 [![Live demo](https://img.shields.io/badge/live%20demo-nercari.github.io-blue)](https://nercari.github.io/claude-code-setup-example/)
-[![llms.txt](https://img.shields.io/badge/llms.txt-ready-green)](./llms.txt)
 
 **Claude Code that leaves your `.env` and migrations alone.** In the test, neither protected file was changed (the hook stopped the migration edit; Claude declined the `.env` one), and all 11 setup checks pass (`check.py`).
 
