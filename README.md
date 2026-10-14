@@ -17,7 +17,7 @@
 - An MCP config (`after/.mcp.json`)
 - A pull request with a short written guide, and the checks that prove the setup works (`check.py`)
 
-Packages: RULES FILE / SAFE SETUP / FULL TEAM SETUP (see the Fiverr gig).
+Packages: RULES FILE / SAFE SETUP / FULL TEAM SETUP (Fiverr gig coming soon).
 
 ![Result image: Shelvanta fictional setup showing risky edits 2/2 before, 0/2 after, and 11/11 setup checks.](docs/assets/result-claude-code-setup-example.png)
 
