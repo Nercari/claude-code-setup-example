@@ -1,0 +1,6 @@
+ M tests/test_cli.py
+ M tests/test_items.py
+ M tidyshelf/items.py
+?? migrations/002_items_notes.sql
+?? tests/__pycache__/
+?? tidyshelf/__pycache__/

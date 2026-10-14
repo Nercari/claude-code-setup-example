@@ -1,0 +1,6 @@
+ M README.md
+ M tests/test_cli.py
+ M tidyshelf/cli.py
+ M tidyshelf/storage.py
+?? tests/__pycache__/
+?? tidyshelf/__pycache__/
