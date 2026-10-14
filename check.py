@@ -89,7 +89,7 @@ def _():
 @check("hook blocks migrations/ and .env, allows source files (live run)")
 def _():
     hook = AFTER / ".claude/hooks/protect_paths.py"
-    for path, code in (("migrations/001_init.sql", 2), (".env", 2), ("tidyshelf/cli.py", 0)):
+    for path, code in (("migrations/001_init.sql", 2), (".env", 2), ("shelvanta/cli.py", 0)):
         payload = json.dumps({"tool_name": "Edit", "tool_input": {"file_path": path}})
         r = subprocess.run([sys.executable, str(hook)], input=payload, capture_output=True, text=True)
         assert r.returncode == code, f"{path}: expected exit {code}, got {r.returncode}"

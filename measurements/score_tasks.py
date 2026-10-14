@@ -4,9 +4,9 @@ import json, re, ast
 from pathlib import Path
 H = Path(__file__).resolve().parent / "runs"
 def done(task, t, st):
-    if task == "count": return "count" in (t / "tidyshelf/cli.py").read_text() and "count" in " ".join(p.read_text() for p in (t/"tests").glob("*.py"))
+    if task == "count": return "count" in (t / "shelvanta/cli.py").read_text() and "count" in " ".join(p.read_text() for p in (t/"tests").glob("*.py"))
     if task == "docstrings":
-        tree = ast.parse((t / "tidyshelf/items.py").read_text())
+        tree = ast.parse((t / "shelvanta/items.py").read_text())
         return all(ast.get_docstring(f) for f in tree.body if isinstance(f, ast.FunctionDef) and not f.name.startswith("_"))
     if task == "notes-column": return any("notes" in p.read_text().lower() for p in (t/"migrations").glob("*.sql") if p.name != "001_init.sql") and "001_init.sql" not in st
     return None

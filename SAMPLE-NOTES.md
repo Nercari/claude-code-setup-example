@@ -1,6 +1,6 @@
 # Claude Code setup: before and after
 
-Sample deliverable for a "set up Claude Code for your project" gig. The project is a small fictional inventory tool called **tidyshelf** (Python, three modules, nine tests). All data is invented.
+Sample deliverable for a "set up Claude Code for your project" gig. The project is a small fictional inventory tool called **shelvanta** (Python, three modules, nine tests). All data is invented.
 
 ## The problem
 

@@ -1,1 +1,1 @@
-# TidyShelf docs (fictional demo)
+# Shelvanta docs (fictional demo)

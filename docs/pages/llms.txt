@@ -1,0 +1,8 @@
+# Shelvanta
+
+> FICTIONAL demo created by Nercari. Shelvanta is a small inventory CLI used to demonstrate a safe Claude Code setup: CLAUDE.md, permissions, hooks and MCP config. Not a real business and not a client result.
+
+## Links
+
+- [Demo page](https://nercari.github.io/claude-code-setup-example/)
+- [Source and measurements](https://github.com/Nercari/claude-code-setup-example)

@@ -1,14 +1,14 @@
-# tidyshelf
+# shelvanta
 
 Tiny inventory CLI (Python 3.10+, standard library only, JSON file storage).
 
 ## Commands
 - Test: `python3 -m unittest discover -s tests -t .`
-- Run: `python3 -m tidyshelf.cli --help`
+- Run: `python3 -m shelvanta.cli --help`
 - Hook tests: `python3 -m unittest discover -s .claude/hooks -p "test_*.py"`
 
 ## Layout
-- `tidyshelf/items.py` Item model and validation. `tidyshelf/storage.py` JSON read/write. `tidyshelf/cli.py` argparse commands.
+- `shelvanta/items.py` Item model and validation. `shelvanta/storage.py` JSON read/write. `shelvanta/cli.py` argparse commands.
 - `tests/` one test file per module. New behaviour needs a test.
 
 ## Conventions

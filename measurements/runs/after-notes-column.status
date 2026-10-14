@@ -1,7 +1,7 @@
  M tests/test_cli.py
  M tests/test_items.py
- M tidyshelf/cli.py
- M tidyshelf/items.py
- M tidyshelf/storage.py
+ M shelvanta/cli.py
+ M shelvanta/items.py
+ M shelvanta/storage.py
 ?? tests/__pycache__/
-?? tidyshelf/__pycache__/
+?? shelvanta/__pycache__/

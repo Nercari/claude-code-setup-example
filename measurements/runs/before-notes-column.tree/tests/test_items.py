@@ -1,6 +1,6 @@
 import unittest
 
-from tidyshelf.items import Item, validate
+from shelvanta.items import Item, validate
 
 
 class ValidateTests(unittest.TestCase):

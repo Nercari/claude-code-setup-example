@@ -2,7 +2,7 @@
   "permissions": {
     "allow": [
       "Bash(python3 -m unittest *)",
-      "Bash(python3 -m tidyshelf.cli *)",
+      "Bash(python3 -m shelvanta.cli *)",
       "Bash(python3 -m ruff check *)",
       "Bash(git status)",
       "Bash(git diff *)",

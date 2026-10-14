@@ -3,8 +3,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from tidyshelf import cli, storage
-from tidyshelf.items import Item
+from shelvanta import cli, storage
+from shelvanta.items import Item
 
 
 class CliTests(unittest.TestCase):

@@ -26,26 +26,26 @@ class ProtectPathsTests(unittest.TestCase):
         self.assertEqual(run_hook(edit(path)).returncode, 0, path)
 
     def test_blocks_migrations(self):
-        self.assertBlocked("/work/tidyshelf/migrations/001_init.sql")
+        self.assertBlocked("/work/shelvanta/migrations/001_init.sql")
         self.assertBlocked("migrations/002_new.sql", "Write")
 
     def test_blocks_env_files(self):
-        self.assertBlocked("/work/tidyshelf/.env")
-        self.assertBlocked("/work/tidyshelf/.env.production")
+        self.assertBlocked("/work/shelvanta/.env")
+        self.assertBlocked("/work/shelvanta/.env.production")
 
     def test_blocks_windows_separators(self):
-        self.assertBlocked("C:\\work\\tidyshelf\\migrations\\001_init.sql")
+        self.assertBlocked("C:\\work\\shelvanta\\migrations\\001_init.sql")
 
     def test_allows_normal_files(self):
-        self.assertAllowed("/work/tidyshelf/tidyshelf/cli.py")
-        self.assertAllowed("/work/tidyshelf/tests/test_cli.py")
+        self.assertAllowed("/work/shelvanta/shelvanta/cli.py")
+        self.assertAllowed("/work/shelvanta/tests/test_cli.py")
 
     def test_allows_env_example(self):
-        self.assertAllowed("/work/tidyshelf/.env.example")
+        self.assertAllowed("/work/shelvanta/.env.example")
 
     def test_similar_names_not_blocked(self):
-        self.assertAllowed("/work/tidyshelf/migrations_notes.md")
-        self.assertAllowed("/work/tidyshelf/environment.py")
+        self.assertAllowed("/work/shelvanta/migrations_notes.md")
+        self.assertAllowed("/work/shelvanta/environment.py")
 
     def test_fails_open_on_garbage(self):
         self.assertEqual(run_hook(None, raw="not json").returncode, 0)
