@@ -8,4 +8,5 @@ The sample's own checker (the same one CI runs).
 
 ```
 python3 check.py
+python -m unittest tests.test_merge_gate -q
 ```
